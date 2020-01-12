@@ -28,4 +28,8 @@ class Customer
     Meal.all.select {|meal| meal.customer == self}
   end
 
+  def waiters
+    meals.map { |waiters| waiters.waiter == self  }
+  end
+
 end
