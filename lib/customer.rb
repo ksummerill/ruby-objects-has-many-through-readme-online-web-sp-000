@@ -22,6 +22,8 @@ class Customer
     Meal.new(waiter, self, total, tip)
   end
 
+  # We're iterating through every instance of Meal and returning
+  # only the ones where the meal's customer matches the current customer instance.
   def meals
     Meal.all.select {|meal| meal.customer == self}
   end
