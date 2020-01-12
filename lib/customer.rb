@@ -17,7 +17,7 @@ class Customer
   end
 
   # As you can see, we don't need to take customer in as an argument,
-  # because we're passing in self as a reference to the current instance of customer. 
+  # because we're passing in self as a reference to the current instance of customer.
   def new_meal(waiter, total, tip=0)
     Meal.new(waiter, self, total, tip)
   end
